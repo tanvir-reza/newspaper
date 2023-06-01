@@ -1,0 +1,5 @@
+const images=document.querySelectorAll('.img-loader');let backup="";intersect(images);function intersect(data){if(!('IntersectionObserver'in window)){data.forEach(image=>{handleImage(image);})}else{let config={rootMargin:'0px 0px',threshold:0.01};let observer=new IntersectionObserver(observeImages,config);data.forEach(image=>{observer.observe(image);});function observeImages(entries){backup=entries[0].target.src;entries.forEach(entry=>{if(entry.intersectionRatio>0){observer.unobserve(entry.target);handleImage(entry.target);}})}}}
+function handleImage(el){if(typeof el.dataset.src!=='undefined'){preloadImage(el.dataset.src).then(src=>{el.tagName==='IMG'?el.src=src:el.style.backgroundImage='url('+src+')';el.removeAttribute('data-src');})}
+document.body.addEventListener("error",handleErrorCapture,true);}
+function handleErrorCapture(event){event.target.src=backup;}
+function preloadImage(url){return new Promise((resolve,reject)=>{let image=new Image();image.load=resolve(url);image.error=reject;image.src=url;})}

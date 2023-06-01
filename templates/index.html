@@ -1,0 +1,487 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+    <div class="trending-tag d-flex align-items-center mt-3">
+        <span>ট্রেন্ডিং : </span>
+        {% for t in trends_topics %}
+        <a href="#">{{t}}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container section-top mt-3">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 top-left-section lead-top m-order-0">
+            <div class="row">
+                <div class="col-12 lead-news">
+                    <a href=""
+                        class="news-item news-item-lead">
+                        <div class="image-container">
+                            <img style="width: 100%; max-height: 350px; " src="{% static 'img/placeholder.png' %}"
+                                data-src="{{homepage_status.image.url}}?width=600&amp;height=350"
+                                alt="" class="lazyload img-loader">
+                        </div>
+                        <h2 class="title" style="margin: 10px 0">{{homepage_status.title}}</h2>
+                        <span class="d-none d-sm-block">{{homepage_status.title}}</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                {% for n in homepage_status1 %}
+                    <div class="col-sm-6 scaled lead-below-item">
+                        <a href=""
+                            class="news-item news-item-list">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{n.image.url}}?width=130&amp;height=90"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div class="">
+                                <h2 class="title">
+                                    {{n.title}}
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 top-list-1 m-order-1  " style="order: -1">
+
+            
+            <div class="second-center scaled" style="background: #f6dcdc;">
+            {% for n in homepage_status2 %}    
+                <a href=""
+                    class="news-item news-item-list py-2 ">
+                    <div class="image-container">
+                        <img src="{{n.image.url}}"
+                            data-src=""
+                            alt="" class="">
+                    </div>
+                    <div class="">
+                        <h2 class="title">
+                            {{n.title}}
+                        </h2>
+                    </div>
+                </a>
+                {% endfor %}
+                <div class="advertisement m-py-2 md-py-2">
+                    <div id='' style='max-width:100%;width: 300px; height: 250px; background-color: #adacacab;'>
+                        <h4 style="text-align: center; padding-top: 100px; color: #fff">For Add <br>300 X 250</h4>
+                        <!-- <script>
+                           googletag.cmd.push(function () {
+                              googletag.display('div-gpt-ad-1620283475109-0');
+                           });
+                     </script> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="top-right m-pt-3">
+                <div class="d-flex align-items-center flex-column mb-3">
+                    <style>
+                    /* #prayer-container {
+                        width: 300px;
+                        text-align: center;
+                    }
+                    .mytbl {
+                        border: 1px solid #911a39;
+                    }
+                    .prayer_time {
+                        font-size: 22px;
+                        font-weight: 700;
+                        text-align: center !important;
+                    }
+
+                    #prayer-container #prayer_city {
+                        font-size: 1.2em;
+                        font-weight: 800;
+                    }
+
+                    #prayer-container table {
+                        width: 100%
+                    }
+
+                    #prayer-container tbody tr:nth-child(odd) {
+                        background-color: #970808;
+                    }
+                    #prayer-container tbody tr:nth-child(even) {
+                        background-color: #CF4B4B;
+                    }
+                    #prayer-container tbody td {
+                        padding: 10px 10px;
+                        border: 1px solid #911a39;
+                        color: #FFFFFF;
+                    }
+                    #prayer-container tbody td:nth-child(1) {
+                        text-align: left;
+                    }
+
+                    #prayer-container tbody td:nth-child(2) {
+                        text-align: right;
+                    } */
+                    </style>
+                    <!-- prayer time section  -->
+                    
+                    <div class="today-match-box" style="width: 100%;">
+                        <!-- <div class="btn-group btn-group-sm btn-group-toggle mb-2 mt-2" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="lang" id="lang-en" value="en" autocomplete="off"> English
+                            </label>
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="lang" id="lang-bn" value="bn" autocomplete="off" checked> বাংলা
+                            </label>
+                        </div> -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title" id="table_header_title">নামাজের সময়সূচি</h5>
+                                <p id="currentDateTime"></p>
+                            </div>
+                            <div class="card-body">
+                                <div id="divShowPrayTimes"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- prayer time section  -->
+                </div>
+                <div class="opinion-contents">
+
+                    <div class="category-header opinion-header d-flex justify-content-between align-items-center">
+                        <div class="heading opinion-heading d-flex align-items-center">
+                            <p class="title">
+                                <a
+                                    href="">মতামত</a>
+                            </p>
+                        </div>
+                        <a href="">
+                            <div class="read-more d-flex justify-content-end align-items-center">
+                                <p>আরও পড়ুন</p>
+                                <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                            </div>
+                        </a>
+                    </div>
+
+                        <div class="regular-list scaled ai-custom">
+                            <a href=""
+                                class="news-item news-item-regular py-2 d-flex">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{motamot.image.url}}"
+                                    alt="" class="lazyload img-loader"
+                                    style="border-radius: 50%;width: 90px;height: 90px;margin-right: 8px">
+                                <div class="d-flex flex-column">
+                                    <h2 class="title">
+                                        {{motamot.title}}
+                                    </h2>
+                                    <p style="margin-top: 5px;color: #696464;">
+                                        {{motamot.Written_by}} 
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+
+                <div class="advertisement mt-3" style="display: none;">
+                    <div id='' style='max-width: 100%; width: 300px; height: 250px; background-color: #adacacab;'>
+                        <h4 style="text-align: center; padding-top: 100px; color: #fff">For Add <br>300 X 250</h4>
+                        <!-- <script>
+                        googletag.cmd.push(function () {
+                           googletag.display('div-gpt-ad-1620297530803-0');
+                        });
+                  </script> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-two py-3 bg-section-two m-pt-0 mt-3 m-mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-sm-9 special-top">
+                <div class="row">
+
+                    <div class="col-sm-4 box-news ">
+                        <a href=""
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{jatioSingle.title}}</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        
+                        <a href=""
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for s in sports %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
+                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for o in orthoniti %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
+                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for a in antorjatil %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{a.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{a.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for b in binodon %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
+                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for s in sastho %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{s.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{s.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for s in shikkha %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{s.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{s.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for p in projukti %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{p.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{p.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for d in dhormo %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{d.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{d.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for k in krishi %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{k.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{k.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        {% for a in ayin %}
+                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{a.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{a.title}}</h2>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% comment %} <div class="col-xl-3 col-sm-3 m-pt-3">
+                <div class="recent-popular">
+                    <div>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-recent-tab" data-toggle="tab" href="#nav-recent"
+                                role="tab" aria-controls="nav-recent" aria-selected="true">সর্বশেষ</a>
+                            <a class="nav-item nav-link" id="nav-popular-tab" data-toggle="tab" href="#nav-popular"
+                                role="tab" aria-controls="nav-popular" aria-selected="false">সর্বাধিক পঠিত</a>
+                        </div>
+                    </div>
+                    <div class="tab-content px-sm-0" id="nav-tabContent">
+
+                        <div class="tab-pane fade show active" id="nav-recent" role="tabpanel"
+                            aria-labelledby="nav-recent-tab">
+                            <div>
+                                <?php
+                        $informationtopnews = $pdo->query("select  * from  tbl_news where Status='Published'order by id DESC limit 0,10");
+                        while ($rowdatatopnews = $informationtopnews->fetch()) {
+                           $detail_data = strip_tags($rowdatatopnews["detail_bn"]);
+                           $text_string_length = strlen($detail_data);
+
+                           if ($text_string_length >= 230) {
+                              $news_text_data = substr($detail_data, 0, strpos($detail_data, ' ', 220));
+                           } else {
+                              $news_text_data = $detail_data;
+                           }
+
+
+                        ?>
+                                <a class="rp-item py-2 "
+                                    href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>">
+                                    <div class="image-container">
+                                        <img class="img-loader" src=""
+                                            data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=130&amp;height=90"
+                                            alt="<?php echo $rowdatatopnews["title_bn"]; ?>">
+                                    </div>
+                                    <h2 class="news-item-lite"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                                </a>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
+                            <div>
+                                <?php
+                        $informationtopnews = $pdo->query("select  * from  tbl_news where Status='Published'  order by viewers DESC limit 0,10");
+
+                        while ($rowdatatopnews = $informationtopnews->fetch()) {
+                           $detail_data = strip_tags($rowdatatopnews["detail_bn"]);
+                           $text_string_length = strlen($detail_data);
+
+                           if ($text_string_length >= 230) {
+                              $news_text_data = substr($detail_data, 0, strpos($detail_data, ' ', 220));
+                           } else {
+                              $news_text_data = $detail_data;
+                           }
+
+
+                        ?>
+                                <a class="rp-item py-2 "
+                                    href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>">
+                                    <div class="image-container">
+                                        <img class="img-loader" src=""
+                                            data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=130&amp;height=90"
+                                            alt="<?php echo $rowdatatopnews["title_bn"]; ?>">
+                                    </div>
+                                    <h2 class="news-item-lite"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                                </a>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bg-primary text-center py-2">
+                        <a style="font-size: 19px; color: #FFF" href="#" rel="nofollow"> </a>
+                    </div>
+                </div>
+                <div class="two-right">
+                    <div class="advertisement">
+                        <div id='' style='max-width:100%; width: 300px; height: 250px; background-color: #adacacab;'>
+                            <h4 style="text-align: center; padding-top: 100px; color: #fff">For Add <br>300 X 250</h4>
+                            <!-- <script>
+                        googletag.cmd.push(function() {
+                           googletag.display('div-gpt-ad-1620297568227-0');
+                        });
+                     </script> -->
+                        </div>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </div>
+</div>
+<section class="HotlineArea" style="text-align: center; background-color: #FFFFFF; padding: 20px 0px;">
+    <div class="container">
+        <img src="{% static 'img/hotline.jpg' %}" alt="Govt. Hotline Numbers" style="width: 80%; Height: auto;">
+    </div>
+</section>
+
+{% endblock body %}
+

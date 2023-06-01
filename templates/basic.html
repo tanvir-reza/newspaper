@@ -1,0 +1,700 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="bn">
+
+
+<head>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=632048d4ec51fa0012aaef95&product=inline-share-buttons' async='async'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>BDNews20 : Bangla News Portal</title>
+   <link rel="icon" type="image/png" href="{% static 'img/ND.png' %}">
+   {% comment %} <link rel="image_src" href="<?php if(empty($rowdatatop_newsshare)){echo "assets/img/nd_og_img.jpg"; }else{ echo "NewsImage/".$rowdatatop_newsshare['image'];} ?>" /> {% endcomment %}
+{% comment %} <link rel="canonical" href="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" /> {% endcomment %}
+
+
+   {% comment %} <meta property="og:title" content="<?php if(empty($rowdatatop_newsshare)){echo "BDNews20: Bangla News Portal"; }else{ echo   $rowdatatop_newsshare["title_bn"];} ?>" />
+   <meta property="og:description" content="<?php if(empty($rowdatatop_newsshare)){echo "BDNews20 is a newly started online Bangla news portal to provide latest stories in several sections including Bangladesh, International, Sports, Entertainment, Features, Opinion, Tech & more."; }else{ echo $news_text_datashare;} ?>">
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+   <meta property="og:image" content="<?php if(empty($rowdatatop_newsshare)){echo "assets/img/nd_og_img.jpg"; }else{ echo "NewsImage/".$rowdatatop_newsshare['image'];} ?>" />
+   <meta property="og:image:width" content="600" />
+   <meta property="og:image:height" content="315" />
+
+
+   <meta property="fb:app_id" content="3102640556528237" />
+   <meta property="fb:admins" content="3102640556528237" />
+   <meta property="fb:pages" content="100523345143327" />
+
+<meta property="ia:markup_url" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+<meta property="ia:markup_url_dev" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+<meta property="ia:rules_url" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+<meta property="ia:rules_url_dev" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+<meta itemscope itemtype="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>" />
+<meta itemprop="headline" content="<?php if(empty($rowdatatop_newsshare)){echo "News Depend is a newly started online Bangla news portal to provide latest stories in several sections including Bangladesh, International, Sports, Entertainment, Features, Opinion, Tech & more."; }else{ echo $news_text_datashare;} ?>" />
+<meta itemprop="image" content="<?php if(empty($rowdatatop_newsshare)){echo "assets/img/nd_og_img.jpg"; }else{ echo "NewsImage/".$rowdatatop_newsshare['image'];} ?>" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="?menu=NewsDetail&menuName=<?php echo $rowdatatop_newsshare["categoryid"]; ?>&Detail=<?php echo $rowdatatop_newsshare["id"]; ?>">
+<meta name="twitter:title" content="<?php if(empty($rowdatatop_newsshare)){echo "News Depend: Bangla News Portal"; }else{ echo   $rowdatatop_newsshare["title_bn"];} ?>">
+<meta name="twitter:description" content="<?php if(empty($rowdatatop_newsshare)){echo "News Depend is a newly started online Bangla news portal to provide latest stories in several sections including Bangladesh, International, Sports, Entertainment, Features, Opinion, Tech & more."; }else{ echo $news_text_datashare;} ?>">
+<meta name="twitter:image" content="<?php if(empty($rowdatatop_newsshare)){echo "assets/img/nd_og_img.jpg"; }else{ echo "NewsImage/".$rowdatatop_newsshare['image'];} ?>">
+<meta name="twitter:creator" content="@newsdepend">
+
+   <meta name="theme-color" content="#124B65" /> {% endcomment %}
+
+   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+   <link rel="dns-prefetch" href="//connect.facebook.net">
+   <link rel="dns-prefetch" href="//adservice.google.com">
+   <link rel="dns-prefetch" href="https://www.bdnews20.com">
+
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#124B65">
+   <meta name="apple-mobile-web-app-title" content="News Depend">
+   <meta name="keywords" content="Bangaldesh News, Bangla News, Bangla News Online, Online Bangla News, News Depend, ND, Bangladeshi News, Bangladeshi News Online, Bengali News, Bengali Online News, Dhaka Bangladesh News, Breaking News, World News, BD News">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  
+</head>
+
+<body>
+<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="TfRVu7xX"></script> -->
+ <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63db7709c6cf827d"></script> -->
+   <noscript> 
+	  
+      <!-- <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMJ5N5H" height="0" width="0" style="display:none;visibility:hidden"></iframe> -->
+   </noscript>
+   <div class="body-items" style="background: #f9f9f9">
+      <div class="container d-none d-lg-flex py-2 navbar-root" id="section-down">
+         <div class="d-flex justify-content-between align-items-center w-100">
+            <a class="brand-logo-top" title="News Depend" href="/">
+               <img style="max-width: 150px;" src="{% static 'img/NDepend.png' %}" alt="News Depend" />
+            </a>
+            <p class="d-flex align-items-center">
+               <span class="d-flex align-items-center mr-3">
+                  <svg class="mr-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                     <path d="M0 0h24v24H0z" fill="none" />
+                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                  <span>ঢাকা</span>
+				   
+               </span>
+               <span class="d-flex align-items-center">
+                  <svg class="mr-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                     <path d="M0 0h24v24H0z" fill="none" />
+                     <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z" />
+                  </svg>
+
+                  <span>25 Date ইং</span>
+               </span>
+            </p>
+            <div class="d-flex align-items-center social-media-icons">
+               <a href="https://www.facebook.com/Newsdepend/" aria-label="Facebook" target="_blank" class="pl-2">
+                  <div class="social-icon facebook"><i class="fa fa-facebook"></i></div>
+               </a>
+               <a href="https://www.youtube.com/channel/UCV71KoWIA9TC9KtZvQRz0Hg" aria-label="Youtube" target="_blank" class="pl-2">
+                  <div class="social-icon youtube"><i class="fa fa-youtube-play"></i></div>
+               </a>
+               <a href="https://twitter.com/newsdepend" aria-label="Twitter" target="_blank" class="pl-2">
+                  <div class="social-icon twitter"><i class="fa fa-twitter"></i></div>
+               </a>
+               <a href="https://www.instagram.com/newsdepend" aria-label="Instagram" target="_blank" class="pl-2">
+                  <div class="social-icon instagram"><i class="fa fa-instagram"></i></div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-top shadow-sm navigator-extra">
+         <div class="container">
+            <button class="navbar-toggler collapsed m-margin-reducer-left-14" type="button" data-toggle="collapse" data-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar top-bar"></span>
+               <span class="icon-bar middle-bar"></span>
+               <span class="icon-bar bottom-bar"></span>
+               <span class="sr-only">BDNews20</span>
+            </button>
+            <div class="navbar-brand align-items-center d-flex d-lg-none mr-0">
+               <a title="News Depend" href="/">
+                  <img src="assets/img/NDepend.png" alt="BDNews20" width="1345" height="192" />
+               </a>
+            </div>
+			 <!--<button id="myBtn" type="button" class="btn btn-link" data-target="slide-down" aria-label="Search">
+				 <i class="fa fa-search" id="searchmenubacground"></i>
+			 </button>-->
+            <button  id="myBtn" type="button" class="btn btn-link d-flex d-lg-none" data-target="slide-down-m" aria-label="Search" style="margin-right: -14px;">
+               <i class="fa fa-search" style="font-size: 20px;"></i>
+            </button>
+            <div class="navbar-collapse collapse" id="main-nav-1">
+               <div style="width: 99%">
+               <!-- Large Screen Menu Start  -->
+                  <ul class="navbar-nav m-auto d-none d-lg-flex d-menu-items justify-content-center">
+                     <li class="nav-item">
+                        <a title="" href="index.php" class="nav-link">প্রচ্ছদ</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Latest" class="nav-link">সর্বশেষ</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=জাতীয়" class="nav-link">জাতীয়</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=রাজনীতি" class="nav-link">রাজনীতি</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=অর্থনীতি" class="nav-link">অর্থনীতি</a>
+                     </li>
+                     <li class="nav-item dropdown dropdown-toggle" style="display: flex; color: #FFF; align-items: center;">
+                        <a title="" href="?menu=HoleCountry" class="nav-link">সারাদেশ</a>
+                        <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="?menu=DistNews" style="padding: 5px 0;">জেলার খবর</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=আন্তর্জাতিক" class="nav-link">আন্তর্জাতিক</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=খেলা" class="nav-link">খেলা</a>
+                     </li>
+                     <li class="nav-item">
+                        <a title="" href="?menu=Category&menuName=বিনোদন" class="nav-link">বিনোদন</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a title="" href="?menu=Category&menuName=স্বাস্থ্য" class="nav-link">স্বাস্থ্য</a>
+                     </li>
+                     <li class="nav-item dropdown dropdown-toggle" style="display: flex; color: #FFF; align-items: center;">
+                        <a title="" href="#" class="nav-link">ফিচার</a>
+                        <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="?menu=Category&menuName=লাইফস্টাইল" style="padding: 5px 0;">লাইফস্টাইল</a>
+                           <a class="dropdown-item" href="?menu=Category&menuName=তথ্যপ্রযুক্তি" style="padding: 5px 0;">তথ্যপ্রযুক্তি</a>
+                           <a class="dropdown-item" href="?menu=Category&menuName=ভ্রমন" style="padding: 5px 0;">ভ্রমন</a>
+                           <a class="dropdown-item" href="?menu=Category&menuName=সাহিত্য ও সংস্কৃতি" style="padding: 5px 0;">সাহিত্য ও সংস্কৃতি</a>
+                        </div>
+                     </li>
+                     <li class="nav-item hidden-item-lowerend">
+                        <a title="" href="?menu=Category&menuName=শিক্ষা" class="nav-link">শিক্ষা</a>
+                     </li>
+                     <li class="nav-item hidden-item-lowerend">
+                        <a title="" href="?menu=Category&menuName=চাকরি" class="nav-link">চাকরি</a>
+                     </li>
+                     <li class="nav-item position-static d-flex">
+                        <button class="navbar-toggler collapsed nav-link d-flex align-items-center" aria-expanded="false" type="button" data-toggle="collapse" data-target="#nav-items-2">
+                           <div class="button-bars">
+                              <span class="icon-bar top-bar"></span>
+                              <span class="icon-bar middle-bar"></span>
+                              <span class="icon-bar bottom-bar"></span>
+                           </div>
+                           <span class="button-label">অন্যান্য</span>
+                        </button>
+                        <div class="dropdown-menu w-100 top-auto shadow border-0 rounded-0 nav-collapse collapse m-0" id="nav-items-2">
+                           <div class="container">
+                              <div class="row w-100 menu-items-others">
+                                 <div class="col-sm-1">
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=প্রবাস">প্রবাস</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=মতামত">মতামত</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=ধর্ম">ধর্ম</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=ছোটদের পোস্ট">ছোটদের পোস্ট</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=আইন-আদালত">আইন-আদালত</a>
+                                 </div>
+                                 <div class="col-sm-1">
+                                 </div>
+
+                                 <div class="col-sm-1">
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=আবহাওয়া">আবহাওয়া</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=ক্যাম্পাস">ক্যাম্পাস</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Latest">এক্সক্লুসিভ</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=গণমাধ্যম">গণমাধ্যম</a>
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <a href="?menu=Category&menuName=কৃষি ও প্রকৃতি">কৃষি ও প্রকৃতি</a>
+                                 </div>
+                                 <div class="col-sm-1">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item position-static d-flex">
+                        <button id="myLgBtn" type="button" class="btn btn-link" data-target="slide-down" aria-label="Search"><i class="fa fa-search" id="searchmenubacground"></i>
+                        </button>
+                     </li>
+                  </ul>
+               <!-- Large Screen Menu End  -->
+				   
+               </div>
+               <div class="d-flex d-lg-none" style="position: fixed; padding: 1rem; background: #f5f5f5; width: 100%; color: #FFF; justify-content:space-between">
+                  <button class="navbar-toggler m-margin-reducer-left-14 text-white" type="button" data-toggle="collapse" data-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="true" aria-label="Toggle navigation">
+                     <span class="icon-bar top-bar"></span>
+                     <span class="icon-bar middle-bar"></span>
+                     <span class="icon-bar bottom-bar"></span>
+                     <span class="sr-only">DP</span>
+                  </button>
+               </div>
+               <!-- This is Mobile Menu Section Start -->
+               <ul class="navbar-nav d-flex d-lg-none mobile-menu" style="justify-content: space-between;flex-flow: wrap;padding: 3.8rem 0;">
+                  <li class="nav-item">
+                     <a title="" href="index.php" class="nav-link">প্রচ্ছদ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Latest" class="nav-link">সর্বশেষ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=জাতীয়" class="nav-link">জাতীয়</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=রাজনীতি" class="nav-link">রাজনীতি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=অর্থনীতি" class="nav-link">অর্থনীতি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=HoleCountry" class="nav-link">সারাদেশ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=আন্তর্জাতিক" class="nav-link">আন্তর্জাতিক</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=খেলা" class="nav-link">খেলা</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=বিনোদন" class="nav-link">বিনোদন</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=স্বাস্থ্য" class="nav-link">স্বাস্থ্য</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=শিক্ষা" class="nav-link">শিক্ষা</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=DistNews" class="nav-link">জেলার খবর</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=লাইফস্টাইল" class="nav-link">লাইফস্টাইল</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=গণমাধ্যম" class="nav-link">গণমাধ্যম</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=আইন-আদালত" class="nav-link">আইন-আদালত</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=কৃষি ও প্রকৃতি" class="nav-link">কৃষি ও প্রকৃতি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=তথ্যপ্রযুক্তি" class="nav-link">তথ্যপ্রযুক্তি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=আবহাওয়া" class="nav-link">আবহাওয়া</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=ভ্রমন" class="nav-link">ভ্রমন</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=ধর্ম" class="nav-link">ধর্ম</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=চাকরি" class="nav-link">চাকরি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=মতামত" class="nav-link">মতামত</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Latest" class="nav-link">এক্সক্লুসিভ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=প্রবাস" class="nav-link">প্রবাস</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=ছোটদের পোস্ট" class="nav-link">ছোটদের পোস্ট</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=সাহিত্য ও সংস্কৃতি" class="nav-link">সাহিত্য ও সংস্কৃতি</a>
+                  </li>
+                  <li class="nav-item">
+                     <a title="" href="?menu=Category&menuName=ক্যাম্পাস" class="nav-link">ক্যাম্পাস</a>
+                  </li>
+               </ul>
+               <!-- This is Mobile Menu Section End  -->
+            </div>
+			
+         </div>
+         <!-- <form class="search-wrapper needs-validation" style="display: none;" method="post" action="?menu=NewsSearch&menuName=সংবাদ" accept-charset="UTF-8"  enctype="multipart/form-data">
+               <div class="container m-pl-0 m-pr-0">
+                  <div class="d-flex align-items-center justify-content-between w-100">
+                     <div class="input-group">
+                        <input type="text" name="searchdata" id="searchdata" class="form-control" autocomplete="off" placeholder="অনুসন্ধান করুন" required />
+                        <div class="input-group-append search-action">
+                           <button name="Search" id="Search" type="submit" class="btn btn-dark"><i style="color: white !important;" class="fa fa-search"></i></button>
+                           <button type="button" class="btn btn-light m-margin-reducer-right-14" data-target="slide-up">
+                           <i class="fa fa-times"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form> -->
+      </nav>
+	  <!-- Marquee headline Start -->
+	  <div class="MarqueSection">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-12">
+					<div class="h_list">
+						<marquee direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+							<ul class="marque">
+                                {% for s in slider_news %}
+                                <li><i class="fa fa-eye"></i><a href="">{{s}}</a></li>
+                                {% endfor %}
+							</ul>
+						</marquee>
+					 </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+      <main role="main">
+      <div data-nosnippet>
+        {% block body %}
+
+        {% endblock body %}
+      </div>
+   </main>
+</div>
+    <footer data-nosnippet class="d-print-none" style="background: #970808;">
+        <div class="footer-top py-3 bg-section-two" style="border-top: 3px solid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer_logo">
+                            <div class="f_logo">
+                                <a href="/">
+                                    <img style="max-width: 120px;" src="{% static 'img/NDepend.png' %}" alt="News Depend" />
+                                </a>
+                                <p>৩৭/২, পুরানা পল্টন,<br>জামান টাওয়ার,<br>ঢাকা-১০০০</p>
+                                <p>BD News20 (নিউজ ডিপেন্ড) is one of the most popular and reliable Bangla News publishers. BD News20 is owned by BD News.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer_contact">
+                            <h5>Contact Us</h5>
+                            <p><i class="fa fa-phone-square" aria-hidden="true"></i> +৮৮০ ১৭000 00000</p>
+                            <p><i class="fa fa-mobile" aria-hidden="true"></i> +৮৮০ ১৭৭৭ 0000</p>
+                            <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +৮৮০ ১৭৭৭ 0000</p>
+                            <p><a href="mailto:info@bdnews24.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>  info@bdnews24.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer_service">
+                            <h5>About Us</h5>
+                            <a href="#"><p><i class="fa fa-clipboard" aria-hidden="true"></i> গোপনীয়তা নীতি</p></a>
+                            <a href="#"><p><i class="fa fa-database" aria-hidden="true"></i> নিউজ আর্কাইভ&nbsp;&nbsp;&nbsp;</p></a>
+                            <a href="#"><p><i class="fa fa-audio-description" aria-hidden="true"></i> বিজ্ঞাপন নীতি&nbsp;&nbsp;&nbsp;</p></a>
+                            <a href="#"><p><i class="fa fa-th-large" aria-hidden="true"></i> আমাদের সম্পর্কে</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer_social social-media-icons">
+                            <h5>Connect Us</h5>
+                            <a href="https://www.facebook.com/Newsdepend/" aria-label="Facebook" target="_blank" class="pl-2">
+                                <div class="social_name">ফেসবুক</div><div class="social-icon facebook"><i class="fa fa-facebook"></i></div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCV71KoWIA9TC9KtZvQRz0Hg" aria-label="Youtube" target="_blank" class="pl-2">
+                                <div class="social_name">ইউটিউব</div><div class="social-icon youtube"><i class="fa fa-youtube-play"></i></div>
+                            </a>
+                            <a href="https://twitter.com/newsdepend" aria-label="Twitter" target="_blank" class="pl-2">
+                                <div class="social_name">টুইটার</div><div class="social-icon twitter"><i class="fa fa-twitter"></i></div>
+                            </a>
+                            <a href="https://www.instagram.com/newsdepend" aria-label="Instagram" target="_blank" class="pl-2">
+                                <div class="social_name">ইন্সটাগ্রাম</div><div class="social-icon instagram"><i class="fa fa-instagram"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="footer-top-items footer-mv d-flex align-items-center justify-content-between">
+                    <div class="footer-logo d-none d-lg-flex">
+                        <a href="/">
+                            <img style="max-width: 120px;" src="assets/img/NDepend.png" alt="Dhaka Post" />
+                        </a>
+                    </div>
+                    <div class="editor">
+                        <p>সম্পাদক: নাসের আহমেদ</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-white">
+                <!-- <div class="footerNewLinks text-center">
+                    <a href="" class="text-white">গোপনীয়তার নীতি</a>
+                    <a href="" class="text-white">ব্যবহারের শর্তাবলি</a>
+                    <a href="" class="text-white">আমাদের সম্পর্কে</a>
+                    <a href="" class="text-white">আমরা</a>
+                    <a href="" class="text-white">যোগাযোগ</a>
+                    <a href="" class="text-white">আর্কাইভ</a>
+                    <a href="" class="text-white">বিজ্ঞাপন</a>
+                </div>
+                <div class="footerNewAddress text-center py-3">
+                    <p>৯৮ কাজী নজরুল ইসলাম এভিনিউ, কাওরান বাজার, ঢাকা-১২১৫</p>
+                    <p>
+                        <a href="tel:+8809611111111" aria-label="Telephone" class="text-white" target="_blank" rel="nofollow noopener">
+                            <abbr title="Phone"><i class="fa fa-phone"></i> </abbr>&nbsp;+৮৮০ ১২১৩ ৬৬৬৬৬৬<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+8801313777777" aria-label="Mobile" class="text-white" target="_blank" rel="nofollow noopener">
+                            <abbr title="Mobile"><i class="fa fa-mobile"></i> </abbr>&nbsp;+৮৮০ ৫১৫১ ৭৭৭৭৭৭<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://wa.me/8801777707600" aria-label="Whatsapp" class="text-white" target="_blank" rel="nofollow noopener">
+                            <abbr title="WhatsApp"><i class="fa fa-whatsapp"></i> </abbr>&nbsp;+৮৮০ ১৬৬৬ ৮৮৮৮৮৮<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@newsdepend.com" aria-label="Email" class="text-white" target="" rel="nofollow noopener">
+                            <i class="fa fa-envelope-o"></i> &nbsp;info@newsdepend.com
+                        </a>
+                    </p>
+                </div>
+                <div class="footerText text-white">
+                    <p>News Depend (নিউজ ডিপেন্ড) is one of the most popular and reliable Bangla News publishers. News Depend is owned by Sonali Entertainment.
+                    </p>
+                </div> -->
+                <div class="ownerSection">
+                    <p>© 2023 <strong><a href="index.php">BD News20</a></strong> All Right Reserved.</p>
+                    <p>Powered by: <strong><a href="https://pixelsofttech.com/">PixelST</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script async src="{% static 'js/loader.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script async src="{% static 'js/areaSearch.js' %}"></script>
+    <script async src="{% static 'js/moment-with-locales.min.js' %}"></script>
+    <script async src="{% static 'js/PrayTimes.js' %}"></script>
+    <script async src="{% static 'js/app.js' %}"></script>
+   
+
+    <!-- <div id='div-gpt-ad-1624691711930-0'>
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display('div-gpt-ad-1624691711930-0');
+            });
+        </script>
+    </div> -->
+    <!-- <style>
+      .footer-ad {
+          display: block;
+          height: auto;
+          visibility: visible;
+          opacity: 1;
+          will-change: opacity;
+          width: 100%;
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          box-sizing: border-box;
+          z-index: 999999;
+          box-shadow: rgb(0 0 0 / 40%) 0px -4px 6px -3px;
+          background: #fff;
+      }
+      
+      .ad-box {
+          display: flex;
+          justify-content: center;
+          margin-top: 4px;
+      }
+      
+      .ad-close-btn {
+          display: block !important;
+          background-image: url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAl0lEQVRYw+2WSw6AIAwFX+IZuSIJZ2RRF67EX0FmoemsYV4AbSsFQfBfFmUl9+qkrKVPX2SqzoikKlPpicgymTNi05tMWR1Hrs4I/8qhjcN63+ZX+mfBa/29ZIr+WjRNfy6bqj8Kp+vbCEC/j0D0bQSgxwPgK4IfGf5M4R8NLhVwsYPLNdxw4JaJN318bMEHL3x0DILgW6zbiArszHKr4QAAAABJRU5ErkJggg==");
+          background-size: 20px;
+          background-position: center;
+          background-color: #fff;
+          background-repeat: no-repeat;
+          border: none;
+          height: 28px;
+          width: 28px;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          right: 0;
+          top: -27px;
+          box-shadow: 0 -1px 1px 0 rgb(0 0 0 / 20%);
+          border-radius: 12px 0 0 0;
+      }
+      
+      .ad-close-btn::before {
+          position: absolute;
+          content: "";
+          top: -20px;
+          right: 0;
+          left: -20px;
+          bottom: 0;
+      }
+      </style> -->
+    <!-- <div class="footer-ad d-print-none">
+      <div class="ad-box">
+          <div id='div-gpt-ad-1627731590993-0' style='min-width: 970px; min-height: 90px;'>
+              <script>
+                  googletag.cmd.push(function () {
+                      googletag.display('div-gpt-ad-1627731590993-0');
+                  });
+              </script>
+          </div>
+      </div>
+      <div class="ad-close-btn" onclick="hideFooterAd()"></div>
+      <script>
+          function hideFooterAd() {
+              document.querySelector('.footer-ad').style.display = "none";
+              document.querySelector('footer').style.paddingBottom = "10px";
+          }
+      </script>
+      </div> -->
+      <div id="myModal" class="modal">
+         <!-- Modal content -->
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLongTitle">অনুসন্ধান</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span style="color:#000;" aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+
+               <form method="POST" action="?menu=NewsSearch&menuName=সংবাদ" accept-charset="UTF-8" class="form" enctype="multipart/form-data">
+                  <div class="row">
+                     <div class=" col-md-2" style="margin-bottom:10px;"></div>
+                     <div class="SrcInBox col-md-6" style="margin-bottom:10px;">
+                        <input class="form-control" placeholder="এখানে লিখুন..." name="searchdata" id="searchdata" type="text" required="required">
+                     </div>
+                     <div class="HomeSrcBtn col-md-2" style="margin-bottom:10px;">
+						 <button name="Search" id="Search" type="submit" class="btn dis-sea btn-block bg-primary" aria-label="Search" style="padding: 4.5px 0px;">
+							 <p style="color:#FFF; font-size:18px;">খুঁজুন <i class="fa fa-search" style="padding-left: 5px; color: #FFF !important; font-size:16px;"></i></p>
+						 </button>
+                        <!--<input class="form-control btn btn-success" name="Search" id="Search" type="submit" value="অনুসন্ধান">-->
+                     </div>
+                  </div>
+               </form>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+         </div>
+      </div>
+    <!-- Modal Script Start Small Device -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Modal Script End Small Device-->
+	<!-- Modal Script Start for large Device -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myLgBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Modal Script End for large Device -->
+
+
+    <!-- <script>
+        (function() {
+            "use strict";
+            window.addEventListener(
+                "load",
+                function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    let forms = document.getElementsByClassName("needs-validation");
+                    // Loop over them and prevent submission
+                    let validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener(
+                            "submit",
+                            function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add("was-validated");
+                            },
+                            false
+                        );
+                    });
+                },
+                false
+            );
+        })();
+    </script>-->
+    
+</body>
+
+</html>

@@ -233,158 +233,158 @@
                         
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for s in sports %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
-                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
-                            </div>
-                            <div>
-                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
-                            </div>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    <div class="col-sm-4 box-news ">
-                        {% for o in orthoniti %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
-                            class="news-item news-item-box m-py-2">
-                            <div class="image-container">
-                                <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
-                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
-                            </div>
-                            <div>
-                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
-                            </div>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    <div class="col-sm-4 box-news ">
-                        {% for a in antorjatil %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
-                            class="news-item news-item-box m-py-2">
-                            <div class="image-container">
-                                <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{a.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{a.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for b in binodon %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=330&amp;height=175"
-                                    alt="<?php echo $rowdatatopnews["title_bn"]; ?>" class="lazyload img-loader">
-                            </div>
-                            <div>
-                                <h2 class="title"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
-                            </div>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    <div class="col-sm-4 box-news ">
-                        {% for s in sastho %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
-                            class="news-item news-item-box m-py-2">
-                            <div class="image-container">
-                                <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{s.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{s.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for s in shikkha %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{s.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{s.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for p in projukti %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{p.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{p.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for d in dhormo %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{d.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{d.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for k in krishi %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{k.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{k.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
                     </div>
                     <div class="col-sm-4 box-news ">
-                        {% for a in ayin %}
-                        <a href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>"
+                        
+                        <a href=""
                             class="news-item news-item-box m-py-2">
                             <div class="image-container">
                                 <img src="{% static 'img/placeholder.png' %}"
-                                    data-src="{{a.image.url}}?width=330&amp;height=175"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
                                     alt="" class="lazyload img-loader">
                             </div>
                             <div>
-                                <h2 class="title">{{a.title}}</h2>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
                             </div>
                         </a>
-                        {% endfor %}
+                        
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        
+                        <a href=""
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        
+                        <a href=""
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-sm-4 box-news ">
+                        
+                        <a href=""
+                            class="news-item news-item-box m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{rajnitiSingle.image.url}}?width=330&amp;height=175"
+                                    alt="" class="lazyload img-loader">
+                            </div>
+                            <div>
+                                <h2 class="title">{{rajnitiSingle.title}}</h2>
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
-            {% comment %} <div class="col-xl-3 col-sm-3 m-pt-3">
+            <div class="col-xl-3 col-sm-3 m-pt-3">
                 <div class="recent-popular">
                     <div>
                         <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
@@ -399,60 +399,31 @@
                         <div class="tab-pane fade show active" id="nav-recent" role="tabpanel"
                             aria-labelledby="nav-recent-tab">
                             <div>
-                                <?php
-                        $informationtopnews = $pdo->query("select  * from  tbl_news where Status='Published'order by id DESC limit 0,10");
-                        while ($rowdatatopnews = $informationtopnews->fetch()) {
-                           $detail_data = strip_tags($rowdatatopnews["detail_bn"]);
-                           $text_string_length = strlen($detail_data);
-
-                           if ($text_string_length >= 230) {
-                              $news_text_data = substr($detail_data, 0, strpos($detail_data, ' ', 220));
-                           } else {
-                              $news_text_data = $detail_data;
-                           }
-
-
-                        ?>
                                 <a class="rp-item py-2 "
-                                    href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>">
+                                    href="">
                                     <div class="image-container">
-                                        <img class="img-loader" src=""
-                                            data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=130&amp;height=90"
-                                            alt="<?php echo $rowdatatopnews["title_bn"]; ?>">
+                                        <img class="img-loader" src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                            alt="" >
                                     </div>
-                                    <h2 class="news-item-lite"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                                    <h2 class="news-item-lite">{{jatioSingle.title}}</h2>
                                 </a>
-                                <?php } ?>
+                                
                             </div>
                         </div>
 
                         <div class="tab-pane fade" id="nav-popular" role="tabpanel" aria-labelledby="nav-popular-tab">
                             <div>
-                                <?php
-                        $informationtopnews = $pdo->query("select  * from  tbl_news where Status='Published'  order by viewers DESC limit 0,10");
-
-                        while ($rowdatatopnews = $informationtopnews->fetch()) {
-                           $detail_data = strip_tags($rowdatatopnews["detail_bn"]);
-                           $text_string_length = strlen($detail_data);
-
-                           if ($text_string_length >= 230) {
-                              $news_text_data = substr($detail_data, 0, strpos($detail_data, ' ', 220));
-                           } else {
-                              $news_text_data = $detail_data;
-                           }
-
-
-                        ?>
                                 <a class="rp-item py-2 "
-                                    href="?menu=NewsDetail&menuName=<?php echo $rowdatatopnews["categoryid"]; ?>&Detail=<?php echo $rowdatatopnews["id"]; ?>">
+                                    href="">
                                     <div class="image-container">
-                                        <img class="img-loader" src=""
-                                            data-src="NewsImage/<?php echo $rowdatatopnews['image']; ?>?width=130&amp;height=90"
-                                            alt="<?php echo $rowdatatopnews["title_bn"]; ?>">
+                                        <img class="img-loader" src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                            alt="{{jatioSingle.title}}">
                                     </div>
-                                    <h2 class="news-item-lite"><?php echo $rowdatatopnews["title_bn"]; ?></h2>
+                                    <h2 class="news-item-lite">{{jatioSingle.title}}</h2>
                                 </a>
-                                <?php } ?>
+                                
                             </div>
                         </div>
 
@@ -473,7 +444,7 @@
                         </div>
                     </div>
                 </div>
-            </div> {% endcomment %}
+            </div> 
         </div>
     </div>
 </div>
@@ -482,6 +453,986 @@
         <img src="{% static 'img/hotline.jpg' %}" alt="Govt. Hotline Numbers" style="width: 80%; Height: auto;">
     </div>
 </section>
+<div class="container pt-3 m-pt-2">
+    <div class="row">
+        <div class="col-lg-9 col-md-8 national-items">
+            <div
+                class="category-header national-ch d-flex justify-content-between align-items-center national__home mt-2">
+                <div class="heading national-heading">
+                    <p class="title"><a href="" class="national-lc">জাতীয়</a></p>
+                </div>
+                <a href="" class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="row border-right">
+                <div class="col-lg-8 col-12">
+                    <div class="grid-fourth pt-2 m-pt-0">
+                        <a href=""
+                            class="grid-fourth-item grid-fourth-item__1 m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="?width=330&amp;height=175"
+                                    alt=" " class="lazyload img-loader">
+                            </div>
+                            <h2> </h2>
+                        </a>
+                         
+                        <a href=""
+                            class="grid-fourth-item grid-fourth-item__2 m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                    alt=" " class="lazyload img-loader">
+                            </div>
+                            <h2> </h2>
+                        </a>
+                         
+                        
+                        <a href=""
+                            class="grid-fourth-item grid-fourth-item__3 m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                    alt=" " class="lazyload img-loader">
+                            </div>
+                            <h2> </h2>
+                        </a>
+                         
+                        <a href=""
+                            class="grid-fourth-item grid-fourth-item__4 m-py-2">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                    alt=" " class="lazyload img-loader">
+                            </div>
+                            <h2> </h2>
+                        </a>
+                         
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 third-right d-none d-sm-flex">
+                    <div class="regular-list scaled">
+                        <a href=""
+                            class="news-item news-item-regular py-2">
+                            <div class="image-container d-flex d-lg-none">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" " class="lazyload img-loader">
+                            </div>
+                            <h2 class="title"> </h2>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 politics">
+            <div
+                class="category-header politics-ch d-flex justify-content-between align-items-center politics__home mt-2">
+                <div class="heading politics-heading">
+                    <p class="title"><a href="" class="politics-lc">রাজনীতি</a></p>
+                </div>
+                <a href="" class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="regular-list scaled ai-custom">
+                
+                <a href=" "
+                    class="news-item news-item-regular py-2">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="advertisement">
+        <div id='' style='min-width: 100%; min-height:90px; background-color: #adacacab;'>
+            <h4 style="text-align: center; padding-top: 15px; color: #fff">For Add <br>970 X 90</h4>
+            <!-- <script>
+            googletag.cmd.push(function() {
+               googletag.display('div-gpt-ad-1654068917401-0');
+            });
+         </script> -->
+        </div>
+    </div>
+</div>
+<div class="container pt-3 m-pt-2">
+    <div class="row">
+        <div class="col-lg-9 col-md-8">
+            <div
+                class="category-header country-ch d-flex justify-content-between align-items-center opinion__home mt-2">
+                <div class="heading opinion-heading">
+                    <p class="title"><a href="" class="country-lc">সারাদেশ</a></p>
+                </div>
+                <a href="" class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="row border-right country-articles">
+                <div class="col-12 col-md-12 col-xl-4">
+                    <div class="row type-sect-three-left">
+                        
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12 box-news">
+                                <a href=" "
+                                    class="news-item news-item-box pt-2 m-pb-2">
+                                    <img src="{% static 'img/placeholder.png' %}"
+                                        data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                        alt=" "
+                                        class="lazyload img-loader">
+                                    <h2 class="title"> </h2>
+                                </a>
+                            </div>
+                         
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="clk-list clk-center">
+                        
+                            <a href= "" class="clk-item clk-item-regular py-2 ">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" " class="lazyload img-loader">
+                                <h2 class="title"> </h2>
+                            </a>
+                         
+                        
+                            <a href=" "
+                                class="clk-item clk-item-regular py-2 d-none d-sm-flex">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" " class="lazyload img-loader">
+                                <h2 class="title"> </h2>
+                            </a>
+                         
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 d-none d-sm-flex">
+                    <div class="clk-list clk-right">
+                        
+                            <a href=" " class="clk-item clk-item-regular py-2">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" " class="lazyload img-loader">
+                                <h2 class="title"> </h2>
+                            </a>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 custom-item">
+            <div
+                class="category-header bangladesh-ch d-flex justify-content-between align-items-center politics__home mt-2">
+                <div class="heading custom-heading">
+                    <p class="title bangladesh-lc">আপনার এলাকার খবর</p>
+                </div>
+            </div>
+            <form method="POST" action="" accept-charset="UTF-8" class="form"
+                enctype="multipart/form-data">
+                <div class="row mt-2" style="margin: 0">
+                    <div class='col-12' style="padding: 5px 0">
+                        <div class="form-group" style="margin: 0">
+                            <select class="form-control" name="Division" id="divisions" onchange="divisionsList();">
+                                <option selected disabled value="">বিভাগ</option>
+                                <option data-value="Dhaka" value="ঢাকা">ঢাকা</option>
+                                <option data-value="Barishal" value="বরিশাল">বরিশাল</option>
+                                <option data-value="Sylhet" value="সিলেট">সিলেট</option>
+                                <option data-value="Chattogram" value="চট্টগ্রাম">চট্টগ্রাম</option>
+                                <option data-value="Rajshahi" value="রাজশাহী">রাজশাহী</option>
+                                <option data-value="Khulna" value="খুলনা">খুলনা</option>
+                                <option data-value="Rangpur" value="রংপুর">রংপুর</option>
+                                <option data-value="Mymensingh" value="ময়মনসিংহ">ময়মনসিংহ</option>
+                            </select>
+                            <script>
+                            $("#divisions").select2({
+                                allowClear: true,
+                                placeholder: 'বিভাগ'
+                            });
+                            </script>
+                        </div>
+                    </div>
+                    <div class='col-12' style="padding: 5px 0">
+                        <div class="form-group" style="margin: 0">
+                            <select class="form-control" name="District" id="distr" onchange="thanaList();"
+                                required></select>
+                            <script>
+                            $("#distr").select2({
+                                allowClear: true,
+                                placeholder: 'জেলা'
+                            });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-12" style="padding: 5px 0">
+                        <div class="form-group" style="margin: 0">
+                            <select class="form-control" name="Upozila" id="upo"></select>
+                            <script>
+                            $("#upo").select2({
+                                allowClear: true,
+                                placeholder: 'উপজেলা'
+                            });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-12" style="padding: 5px 0">
+                        <!-- <input class="btn bg-primary  btn-block text-white" name="submit" id="submit" type="submit" value="খুঁজুন">
+                        <i class="fa fa-search ml-2" style="color: #FFF !important; height: 100%"></i> -->
+                            <button name="submit" id="submit" type="submit" class="btn dis-sea btn-block bg-primary" aria-label="Search" style="padding: 4.5px 0px;">
+                                <p style="color:#FFF; font-size:18px;">খুঁজুন <i class="fa fa-search" style="padding-left: 5px; color: #FFF !important; font-size:16px;"></i></p>
+                            </button>
+                    </div>
+                </div>
+            </form>
+            <div class="advertisement mt-2">
+                <div id='' style='min-width: 300px; min-height: 250px; max-width: 300px; background-color: #adacacab;'>
+                    <h4 style="text-align: center; padding-top: 100px; color: #fff">For Add <br>300 X 250</h4>
+                    <!-- <script>
+                  googletag.cmd.push(function() {
+                     googletag.display('div-gpt-ad-1624958658889-0');
+                  });
+               </script> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-section-two sports-section-contents mt-4">
+    <div class="container pt-3 m-pt-2 pb-3 m-pb-2">
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                <div class="category-header sports-ch d-flex justify-content-between align-items-center">
+                    <div class="heading sports-heading">
+                        <p class="title"><a href="?menu=Category&menuName=খেলা" class="sports-lc">খেলা</a></p>
+                    </div>
+                    <!-- <div class="d-none d-sm-flex align-items-center">
+                  <div class="sct-items" data-href="cricket">ক্রিকেট</div>
+                  <div class="sct-items" data-href="football">ফুটবল</div>
+                  <div class="sct-items active" data-href="sports-all">সকল</div>
+               </div> -->
+                    <a href="" class="d-none d-sm-flex ">
+                        <div class="read-more d-flex justify-content-end align-items-center">
+                            <p>আরও খবর</p>
+                            <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <div class="row sports-all sports-item">
+                        <div class="col-lg-8 col-12">
+                            <div class="grid-fourth pt-2 m-pt-0">
+                                
+                                <a href=" "
+                                    class="grid-fourth-item grid-fourth-item__1 m-py-2">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2> </h2>
+                                </a>
+                                 
+                                
+                                <a href=" "
+                                    class="grid-fourth-item grid-fourth-item__2 m-py-2">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2> </h2>
+                                </a>
+                                 
+                                
+                                <a href=" "
+                                    class="grid-fourth-item grid-fourth-item__3 m-py-2">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2> </h2>
+                                </a>
+                                 
+                               
+                                <a href=" "
+                                    class="grid-fourth-item grid-fourth-item__4 m-py-2">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2> </h2>
+                                </a>
+                                 
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 third-right d-none d-sm-flex">
+                            <div class="regular-list scaled">
+                          
+                                <a href=" "
+                                    class="news-item news-item-regular py-2">
+                                    <div class="image-container d-flex d-lg-none">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2 class="title"> </h2>
+                                </a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cricket sports-item" style="display: none"></div>
+                    <div class="row football sports-item" style="display: none"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 m-mt-2">
+                <div class="category-header education-ch d-flex justify-content-between align-items-center">
+                    <div class="heading custom-heading">
+                        <p class="title"><a href="?menu=Category&menuName=শিক্ষা" class="education-lc">শিক্ষা</a></p>
+                    </div>
+                    <a href="?menu=Category&menuName=শিক্ষা" class="d-none d-sm-flex">
+                        <div class="read-more d-flex justify-content-end align-items-center">
+                            <p>আরও খবর</p>
+                            <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blk-list scaled">
+                    
+                    <a href=" "
+                        class="news-item-blk py-2 news-blk-image">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                    <a href=" "
+                        class="news-item news-item-regular py-2">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175?width=130&amp;height=90"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="advertisement">
+        <div id='' style='min-width: 100%; min-height: 120px; background-color: #adacacab;'>
+            <h4 style="text-align: center; padding-top: 25px; color: #fff">For Add <br>970 X 120</h4>
+            <!-- <script>
+            googletag.cmd.push(function() {
+               googletag.display('div-gpt-ad-1666505039219-0');
+            });
+         </script> -->
+        </div>
+    </div>
+</div>
+<div class="container pt-3 m-pt-2 entertainment">
+    <div class="category-header entertainment-ch d-flex justify-content-between align-items-center mt-2">
+        <div class="heading custom-heading">
+            <p class="title"><a href="" class="entertainment-lc">বিনোদন</a></p>
+        </div>
+        <!-- <div class="d-none d-sm-flex align-items-center">
+         <div class="et-items" data-href="bollywood">বলিউড</div>
+         <div class="et-items" data-href="hollywood">হলিউড</div>
+         <div class="et-items" data-href="dhallywood">ঢালিউড</div>
+         <div class="et-items active" data-href="entertainment-all">সকল</div>
+      </div> -->
+        <a href="" class="d-none d-sm-flex">
+            <div class="read-more d-flex justify-content-end align-items-center">
+                <p>আরও খবর</p>
+                <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+            </div>
+        </a>
+    </div>
+    <div>
+        <div class="row entertainment-all entertainment-item">
+            <div class="col-lg-6 col-12 entertainment-left">
+                <div class="grid-entertainment pt-2">
+                    
+                    <a href=" "
+                        class="grid-entertainment-item grid-entertainment-item__1">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=640&amp;height=335"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2> </h2>
+                    </a>
+                     
+                    
+                    <a href=" "
+                        class="grid-entertainment-item grid-entertainment-item__2">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2> </h2>
+                    </a>
+                     
+                    
+                    <a href=" "
+                        class="grid-entertainment-item grid-entertainment-item__3">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 entertainment-center">
+                <div class="alk-list">
+                    
+                    <a href=" "
+                        class="news-item-alk py-2 news-alk-image">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                    
+                    <a href=" "
+                        class="news-item-alk news-item-regular py-2 d-none d-sm-flex">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 entertainment-right d-none d-sm-flex">
+                <div class="alk-list">
+                    
+                    <a href=" "
+                        class="news-item-alk py-2 news-alk-image">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                   
+                    <a href=" "
+                        class="news-item-alk news-item-regular py-2">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+        </div>
+        <div class="row bollywood entertainment-item" style="display: none"></div>
+        <div class="row hollywood entertainment-item" style="display: none"></div>
+        <div class="row dhallywood entertainment-item" style="display: none"></div>
+    </div>
+</div>
+<div class="container pt-3 m-pt-2">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="category-header international-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading international-heading">
+                    <p class="title"><a href=" "
+                            class="international-lc">আন্তর্জাতিক</a></p>
+                </div>
+                <a href=" " class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="row border-right international-articles">
+                <div class="col-12 col-md-12 col-xl-6">
+                    <div class="row type-sect-three-left">
+                        
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-12 box-news">
+                            <a href=" "
+                                class="news-item news-item-box pt-2">
+                                <div class="image-container">
+                                    <img src="{% static 'img/placeholder.png' %}"
+                                        data-src="{{jatioSingle.image.url}}?width=330&amp;height=90"
+                                        alt=" "
+                                        class="lazyload img-loader">
+                                </div>
+                                <h2 class="title"> </h2>
+                            </a>
+                        </div>
+                         
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-xl-6">
+                    <div class="clk-list clk-center">
+                       
+                        <a href=" "
+                            class="clk-item clk-item-regular py-2 ">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" "
+                                    class="lazyload img-loader">
+                            </div>
+                            <h2 class="title"> </h2>
+                        </a>
+                         
+                       
+                        <a href=" "
+                            class="clk-item clk-item-regular py-2 d-none d-sm-flex">
+                            <div class="image-container">
+                                <img src="{% static 'img/placeholder.png' %}"
+                                    data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                    alt=" "
+                                    class="lazyload img-loader">
+                            </div>
+                            <h2 class="title"> </h2>
+                        </a>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="category-header economy-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading economy-heading">
+                    <p class="title"><a href="" class="economy-lc">অর্থনীতি</a></p>
+                </div>
+                <!-- <div class="d-none d-sm-flex align-items-center">
+               <div class="ect-items" data-href="bank">ব্যাংক</div>
+               <div class="ect-items" data-href="insurance">বীমা</div>
+               <div class="ect-items" data-href="stock-market">শেয়ার বাজার</div>
+               <div class="ect-items active" data-href="economy-all">সকল</div>
+            </div> -->
+                <a href="" class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="economy-articles">
+                <div class="row economy-all economy-item">
+                    <div class="col-12 col-md-12 col-xl-6">
+                        <div class="row type-sect-three-left">
+                            
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-12 box-news">
+                                <a href=" "
+                                    class="news-item news-item-box pt-2">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=90"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2 class="title"> </h2>
+                                </a>
+                            </div>
+                             
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-xl-6">
+                        <div class="clk-list clk-center">
+                            
+                            <a href=" "
+                                class="clk-item clk-item-regular py-2 ">
+                                <div class="image-container">
+                                    <img src="{% static 'img/placeholder.png' %}"
+                                        data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                        alt=" " class="lazyload img-loader">
+                                </div>
+                                <h2 class="title"> </h2>
+                            </a>
+                             
+                            
+                            <a href=" "
+                                class="clk-item clk-item-regular py-2 d-none d-sm-flex">
+                                <div class="image-container">
+                                    <img src="{% static 'img/placeholder.png' %}"
+                                        data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                        alt=" " class="lazyload img-loader">
+                                    <i class="fa fa-play-circle video-icon"></i>
+                                </div>
+                                <h2 class="title"> </h2>
+                            </a>
+                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row bank economy-item" style="display: none"></div>
+                <div class="row insurance economy-item" style="display: none"></div>
+                <div class="row stock-market economy-item" style="display: none"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-section-two">
+    <div class="container pt-3 m-pt-2">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="category-header law-courts-ch d-flex justify-content-between align-items-center mt-2">
+                    <div class="heading custom-heading">
+                        <p class="title"><a href="" class="law-courts-lc">স্বাস্থ্য</a>
+                        </p>
+                    </div>
+                    <a href="" class="d-none d-sm-flex">
+                        <div class="read-more d-flex justify-content-end align-items-center">
+                            <p>আরও খবর</p>
+                            <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blk-list scaled">
+            
+                    <a href=" "
+                        class="news-item-blk py-2 news-blk-image">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" "
+                                class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                    
+                    <a href=" "
+                        class="news-item news-item-regular py-2">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                alt=" "class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+            <div class="col-md-6 probash">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="category-header probash-ch d-flex justify-content-between align-items-center mt-2">
+                            <div class="heading custom-heading">
+                                <p class="title"><a href="" class="probash-lc">প্রবাস</a>
+                                </p>
+                            </div>
+                            <a href="https://www.dhakapost.com/probash" class="d-none d-sm-flex"
+                                style="white-space: nowrap;">
+                                <div class="read-more d-flex justify-content-end align-items-center">
+                                    <p>আরও খবর</p>
+                                    <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-px-0 third-right pt-1">
+                        <div class="regular-list scaled">
+                            <div class="row probash-all country-item">
+                                <a href=" "
+                                    class="news-item news-item-regular py-2 col-md-6 ">
+                                    <div class="image-container">
+                                        <img src="{% static 'img/placeholder.png' %}"
+                                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                            alt=" "
+                                            class="lazyload img-loader">
+                                    </div>
+                                    <h2 class="title"> </h2>
+                                </a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="category-header law-courts-ch d-flex justify-content-between align-items-center mt-2">
+                    <div class="heading custom-heading">
+                        <p class="title"><a href="" class="law-courts-lc">আইন-আদালত</a>
+                        </p>
+                    </div>
+                    <a href="" class="d-none d-sm-flex">
+                        <div class="read-more d-flex justify-content-end align-items-center">
+                            <p>আরও খবর</p>
+                            <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blk-list scaled">
+                    
+                    <a href=" "
+                        class="news-item-blk py-2 news-blk-image">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                    
+                    <a href=" "
+                        class="news-item news-item-regular py-2">
+                        <div class="image-container">
+                            <img src="{% static 'img/placeholder.png' %}"
+                                data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                                alt=" " class="lazyload img-loader">
+                        </div>
+                        <h2 class="title"> </h2>
+                    </a>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-2 ocs-section exclusive-section">
+    <div class="container pt-3 m-pt-2">
+        <div class="category-header lifestyle-ch d-flex justify-content-between align-items-center mt-2">
+            <div class="heading lifestyle-heading">
+                <p class="title"><a href="" class="lifestyle-lc">এক্সক্লুসিভ</a></p>
+            </div>
+            <a href=""  class="d-none d-sm-flex">
+                <div class="read-more d-flex justify-content-end align-items-center">
+                    <p>আরও খবর</p>
+                    <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="row ocs-items mt-2">
+           
+            <div class="col-sm-3 m-scroll-item align-items-stretch d-flex">
+                <a class="ocs card"
+                    href=" ">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}" class="lazyload img-loader card-img-top"
+                            alt=" "
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title"> </h2>
+                    </div>
+                </a>
+            </div>
+             
+            
+            <div class="col-sm-3 m-scroll-item align-items-stretch d-none d-sm-flex">
+                <a class="ocs card"
+                    href=" ">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}" class="lazyload img-loader card-img-top"
+                            alt=" "
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title"> </h2>
+                    </div>
+                </a>
+            </div>
+             
+        </div>
+    </div>
+</div>
+<div class="container pt-3 m-pt-2 pb-3">
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="category-header lifestyle-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading lifestyle-heading">
+                    <p class="title"><a href=" " class="lifestyle-lc">লাইফস্টাইল</a>
+                    </p>
+                </div>
+                <a href=" " class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="blk-list scaled">
+                
+                <a href=" "
+                    class="news-item-blk py-2 news-blk-image">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+                
+                <a href=" "
+                    class="news-item news-item-regular py-2">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="category-header technology-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading custom-heading">
+                    <p class="title"><a href=" "
+                            class="technology-lc">তথ্যপ্রযুক্তি</a></p>
+                </div>
+                <a href=" " class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="blk-list scaled">
+               
+                <a href=" "
+                    class="news-item-blk py-2 news-blk-image">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+                
+                <a href=" "
+                    class="news-item news-item-regular py-2">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="category-header religion-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading islam-heading">
+                    <p class="title"><a href=" " class="religion-lc">ধর্ম</a></p>
+                </div>
+                <a href=" " class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="blk-list scaled">
+               
+                <a href=" "
+                    class="news-item-blk py-2 news-blk-image">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+               
+                <a href=" "
+                    class="news-item news-item-regular py-2">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="category-header tourism-ch d-flex justify-content-between align-items-center mt-2">
+                <div class="heading custom-heading">
+                    <p class="title"><a href=" " class="tourism-lc">চাকরি</a></p>
+                </div>
+                <a href=" " class="d-none d-sm-flex">
+                    <div class="read-more d-flex justify-content-end align-items-center">
+                        <p>আরও খবর</p>
+                        <p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="blk-list scaled">
+                
+                <a href=" "
+                    class="news-item-blk py-2 news-blk-image">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=330&amp;height=175"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"> </h2>
+                </a>
+                 
+                
+                <a href=" "
+                    class="news-item news-item-regular py-2">
+                    <div class="image-container">
+                        <img src="{% static 'img/placeholder.png' %}"
+                            data-src="{{jatioSingle.image.url}}?width=130&amp;height=90"
+                            alt=" " class="lazyload img-loader">
+                    </div>
+                    <h2 class="title"></h2>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock body %}
 
